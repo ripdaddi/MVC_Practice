@@ -13,7 +13,7 @@ namespace MVC_Data
         private StoreDemoWithCustomerProductEntities _context;
         public OrderRepository(StoreDemoWithCustomerProductEntities context)
         {
-            this._context = context;
+            _context = context;
         }
 
 

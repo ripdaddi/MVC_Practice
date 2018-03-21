@@ -17,7 +17,7 @@ namespace MVC_Data
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Supplier()
         {
-            this.Products = new HashSet<Product>();
+            Products = new HashSet<Product>();
         }
     
         public int Id { get; set; }

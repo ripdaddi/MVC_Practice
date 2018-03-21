@@ -11,7 +11,7 @@ namespace MVC_Data
 
         public ProductRepository(StoreDemoWithCustomerProductEntities context)
         {
-            this._context = context;
+            _context = context;
         }
 
         public IEnumerable<Product> GetProducts()

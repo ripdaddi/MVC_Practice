@@ -11,15 +11,16 @@ namespace MVC_Web.Controllers
     public class CustomerController : Controller
     {
         
-        private ICustomerRepository _customerRepository;
+        private readonly ICustomerRepository _customerRepository;
         public CustomerController()
         {
-            this._customerRepository = new CustomerRepository(new StoreDemoWithCustomerProductEntities());
+            _customerRepository = new CustomerRepository(new StoreDemoWithCustomerProductEntities());
+
         }
 
         public CustomerController(ICustomerRepository customerRepository)
         {
-            this._customerRepository = customerRepository;
+            _customerRepository = customerRepository;
         }
         // GET: Customer
         //public ViewResult Index(string sortOrder, string currentFilter, string searchString, int? page)
@@ -98,7 +99,8 @@ namespace MVC_Web.Controllers
                             Phone = customer.Phone
                         };
                         _db.Customers.Add(newCustomer);
-                       // _customerRepository.Save();
+                        _db.SaveChanges();
+                        // _customerRepository.Save();
                     }
                     //..customer.City = 
 

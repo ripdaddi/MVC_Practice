@@ -14,12 +14,12 @@ namespace MVC_Web.Controllers
         private ProductRepository _repository;
         public ProductController()
         {
-            this._repository = new ProductRepository(new StoreDemoWithCustomerProductEntities());
+            _repository = new ProductRepository(new StoreDemoWithCustomerProductEntities());
         }
 
         public ProductController(ProductRepository customerRepository)
         {
-            this._repository = customerRepository;
+            _repository = customerRepository;
         }
 
         // GET: Product

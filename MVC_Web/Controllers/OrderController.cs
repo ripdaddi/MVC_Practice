@@ -15,12 +15,12 @@ namespace MVC_Web.Controllers
         private OrderRepository _orderRepository;
         public OrderController()
         {
-            this._orderRepository = new OrderRepository(new StoreDemoWithCustomerProductEntities());
+            _orderRepository = new OrderRepository(new StoreDemoWithCustomerProductEntities());
         }
 
         public OrderController(OrderRepository customerRepository)
         {
-            this._orderRepository = customerRepository;
+            _orderRepository = customerRepository;
         }
 
 

@@ -8,7 +8,7 @@ namespace MVC_Web.Models
     {
         public CustomerViewModel()
         {
-            this.Orders = new HashSet<OrderViewModel>();
+            Orders = new HashSet<OrderViewModel>();
         }
 
         public int Id { get; set; } 

@@ -10,7 +10,7 @@ namespace MVC_Web.Models
     {
         public ProductViewModel()
         {
-            this.OrderItems = new HashSet<OrderItemViewModel>();
+            OrderItems = new HashSet<OrderItemViewModel>();
         }
 
         public int Id { get; set; }

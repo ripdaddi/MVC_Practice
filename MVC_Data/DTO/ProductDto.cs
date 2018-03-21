@@ -7,7 +7,7 @@ namespace MVC_Data.DTO
     {
         public ProductDto()
         {
-            this.OrderItems = new HashSet<OrderItemDto>();
+            OrderItems = new HashSet<OrderItemDto>();
         }
 
         public int Id { get; set; }

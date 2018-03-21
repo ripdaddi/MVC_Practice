@@ -9,7 +9,7 @@ namespace MVC_Web.Models
     {
         public SupplierViewModel()
         {
-            this.Products = new HashSet<ProductViewModel>();
+            Products = new HashSet<ProductViewModel>();
         }
 
         public int Id { get; set; }

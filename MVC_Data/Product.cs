@@ -17,7 +17,7 @@ namespace MVC_Data
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Product()
         {
-            this.OrderItems = new HashSet<OrderItem>();
+            OrderItems = new HashSet<OrderItem>();
         }
     
         public int Id { get; set; }

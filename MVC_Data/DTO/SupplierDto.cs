@@ -10,7 +10,7 @@ namespace MVC_Data.DTO
     { 
     public SupplierDto()
     {
-        this.Products = new HashSet<ProductDto>();
+            Products = new HashSet<ProductDto>();
     }
 
     public int Id { get; set; }
